@@ -1,4 +1,3 @@
-// src/MedicineForm.js
 import React, { useState } from 'react';
 
 function MedicineForm({ addMedicine }) {
@@ -8,19 +7,15 @@ function MedicineForm({ addMedicine }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validate input fields here if needed
 
-    // Create a medicine object
     const medicine = {
       name: medicineName,
       quantity: parseInt(quantity),
       price: parseFloat(price),
     };
 
-    // Call the parent component's function to add the medicine
     addMedicine(medicine);
 
-    // Clear input fields
     setMedicineName('');
     setQuantity('');
     setPrice('');
@@ -45,7 +40,7 @@ function MedicineForm({ addMedicine }) {
             type="number"
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
-            // required
+            required
           />
         </label>
         <label>
@@ -54,7 +49,7 @@ function MedicineForm({ addMedicine }) {
             type="number"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
-            // required
+            required
           />
         </label>
         <button type="submit">Add</button>

@@ -7,7 +7,6 @@ function App() {
   const [medicines, setMedicines] = useState([]);
 
   const addMedicine = (medicine) => {
-    // Add the new medicine to the list
     setMedicines([...medicines, medicine]);
   };
 

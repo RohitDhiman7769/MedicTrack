@@ -1,4 +1,3 @@
-// src/MedicineList.js
 import React from 'react';
 
 function MedicineList({ medicines }) {

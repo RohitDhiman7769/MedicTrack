@@ -1,4 +1,3 @@
-/* src/App.css */
 .App {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -62,7 +61,6 @@
     border-radius: 5px;
   }
   
-  /* Optional: Add some spacing for better readability */
   .MedicineForm {
     margin-bottom: 20px;
   }
